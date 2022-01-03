@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>   
+    <title>My Portfolio</title>  
+    <link rel="stylesheet" href="css/main.css"> 
 </head>
 <body>
     <nav>
@@ -12,6 +13,8 @@
             <li>Alex's Portfolio</li>
             <li><a href="http://www.google.com">Link 1</a></li>
             <li><a href="page2.html">Link 2</a></li>
+            <li><a href="page3.html">Link 3</a></li>
+            <li><a href="page4.html">Link 4</a></li>
             
         </ul>
     </nav>
@@ -21,8 +24,8 @@
             <p>Python Programmer</p>
         </div>
             <main>
-                <div>
-                    <article>
+                <div id="main">
+                    <article class="main-articles">
                         <h1>Title A</h1>
                         <strong>Lorem ipsum dolor sit amet consectetur.</strong>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, tenetur quo? Reprehenderit, dolore quibusdam voluptatem tempora beatae et, minima veritatis quas, enim pariatur accusantium harum temporibus natus voluptates sapiente vero.
@@ -34,9 +37,10 @@
                         Doloribus ut adipisci eius blanditiis quas quod corrupti distinctio praesentium impedit dolore ab debitis facere sunt pariatur veniam, eos hic accusantium unde alias asperiores? Repellat aperiam culpa fuga amet blanditiis?
                         Alias repudiandae, minus ipsa maiores perferendis ab. Dolor aut, incidunt quas necessitatibus maiores, harum suscipit dolores nemo ex sapiente odit laudantium modi aliquid quisquam, ea ipsa nisi? Id, placeat magnam. </p>
                     </article>
-                    <article>
+                    <article class="main-articles">
                         <h1>Title B</h1>
                         <strong>Lorem ipsum dolor sit amet consectetur.</strong>
+                            
                     
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, tenetur quo? Reprehenderit, dolore quibusdam voluptatem tempora beatae et, minima veritatis quas, enim pariatur accusantium harum temporibus natus voluptates sapiente vero.
                         Voluptate perferendis nesciunt iste exercitationem beatae obcaecati id accusantium molestiae voluptatibus sapiente libero inventore dolores animi maxime vitae possimus iure est nam impedit, harum neque modi! Architecto tempore ratione quisquam!
@@ -45,7 +49,7 @@
                         Nihil necessitatibus quas sunt similique totam aspernatur voluptatem corporis iste expedita error repudiandae, optio architecto sint voluptates quibusdam vero nemo? Aut dolore ratione illum quo commodi facere expedita dolorem animi?
                         </p>
                     </article>
-                    <article>
+                    <article class="main-articles">
                         <h1>Title C</h1>
                         <strong>Lorem ipsum dolor sit amet consectetur.</strong>
                         <figure>
@@ -62,28 +66,28 @@
                         Alias repudiandae, minus ipsa maiores perferendis ab. Dolor aut, incidunt quas necessitatibus maiores, harum suscipit dolores nemo ex sapiente odit laudantium modi aliquid quisquam, ea ipsa nisi? Id, placeat magnam. </p>
                     </article>
                 </div>
-        <div>
-            <article>
-                <img src="images/me.jpg/">
-                <div>                   
+        <div id="side">
+            <article class="side-articles" id="profile">
+                <img id="profile-image" src="images/me.jpg">
+                <div id="profile-details">                   
                     <h2>Alex Fogal</h2>
                     <ul>
                         <li>3506 Gabby Dr</li>
                         <li>Bloomingotn, IL 61704</li>
                         <li>(309) 831-7874</li>
-                        <li><a href="alex.r.fogal@gmail.com">alex.r.fogal@gmail.com</a></li>
+                        <li><a href="mailto:alex.r.fogal@gmail.com">alex.r.fogal@gmail.com</a></li>
                     </ul>
                 </div>
             </article>
-            <article>
+            <article class="side-articles">
                 <h1>Title D</h1>
-                <strong>Lorem ipsum dolor sit amet consectetur.</strong>
+                <strong><small>ipsum dolor sit amet consectetur.</small></strong>
             
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, tenetur quo? Reprehenderit, dolore quibusdam voluptatem tempora beatae et, minima veritatis quas, enim pariatur accusantium harum temporibus natus voluptates sapiente vero.
                 Voluptate perferendis nesciunt iste exercitationem beatae obcaecati id accusantium molestiae voluptatibus sapiente libero inventore dolores animi maxime vitae possimus iure est nam impedit, harum neque modi! Architecto tempore ratione quisquam!
                 </p>  
             </article>
-            <article>
+            <article class="side-articles">
                 <hi>Contact Me</hi>
                 <strong><small>Please contact me with questions</small></strong>
                 <br>
@@ -95,6 +99,8 @@
                     <label for="body"><strong>Message</strong></label>
                     <br>
                     <textarea id="body" placeholder="You Message" rows="5"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
                 </form>
             </article>
         </div>
